@@ -1,3 +1,5 @@
+<%@ page import="java.util.Set" %>
+<%@ page import="java.util.Map" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,8 +10,8 @@
 <body>
 <h1>Получить курс валюты в белорусских рублях</h1>
 <form action="currency" method="post">
-    <label for="currency">Наименование валюты (dollar, euro):</label>
-    <input type="text" id="currency" name="currency">
+    <label for="currency">Наименование валюты (например, CAD, USD):</label>
+    <input type="text" id="currency" name="currency" required placeholder="Введите валюту">
     <input type="submit" value="Получить курс">
 </form>
 
